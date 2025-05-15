@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        *{
+            padding: 50px;
+            margin: 10px;
+            box-sizing: border-box;
+        }
+        .container{
+            border: 5px solid black;
+            height: 1000px;
+            width: 1000px;
+            display: flex;
+            background-color: blueviolet;
+        }
+        #boxleft{
+            padding: 10px;
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        #boxright{
+            padding: 10px;
+            border: 2px solid black;
+            height: 400px;
+            width: 400px;
+            background-color: crimson;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #Button1{
+            height: 150px;
+            width: 150px;
+        }
+        #Button2{
+            height: 150px;
+            width: 150px;
+        }
+
+        #img{
+            border: 1px black solid;
+            padding: 0;
+            margin: 0;
+        }
+
+        @media (max-width: 600px){
+            .container{
+                width: 600px;
+                height: 600px;
+                display: flex;
+                flex-direction: column-reverse;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #boxleft{
+            padding: 10px;
+            border: 2px solid black;
+            height: 250px;
+            width: 250px;
+            background-color: chocolate;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+            #boxright{
+                padding: 10px;
+                border: 2px solid black;
+                height: 250px;
+                width: 250px;
+                background-color: crimson;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            #Button1{
+                height: 50px;
+                width: 50px;
+            }
+            #Button2{
+                height: 50px;
+                width: 50px;
+            }
+
+            #img{
+                padding: 10px;
+                margin: 0;
+            }
+
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxleft">
+            <button id="Button1">Button1</button>
+            <button id="Button2">Button2</button>
+        </div>
+        <div id="boxright">
+            <img src="download (1).jpeg" id="img" height="300px" width="300px">
+        </div>
+    </div>
+</body>
+</html>

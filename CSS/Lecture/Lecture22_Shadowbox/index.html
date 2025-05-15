@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            background-color: burlywood;
+            height: 600px;
+            border: 2px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            background-color: crimson;
+            width: 300px;
+            height: 300px;
+            border: 5px solid black;
+            /* box-shadow: 7px 14px 5px 5px rgb(105, 1, 1); */
+            /* x-axis, Y-axis, Blur-rad, spreaad-rad*/
+
+            /* box-shadow: inset 7px 14px rgb(105, 1, 1); */
+
+            /* Multiple shadow  */
+            /* box-shadow: 10px 15px rgba(129, 152, 0, 0.823) , 15px 10px rgba(5, 98, 197, 0.782); */
+
+            
+        }
+
+        #logo{
+            border: 1px solid black;
+            margin: 10px;
+        }
+        #h2head{
+           text-shadow: 50px 50px green, 
+        30px 20px 5px yellow, 100px 100px blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <img id="logo" src="logo.png" alt="" height="50px" width="100px">
+            <h2 id="h2head">Learning shadowbox</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Sunt, expedita et? Consectetur nisi, molestiae facilis 
+            </p>
+        </div>
+    </div>
+</body>
+</html>

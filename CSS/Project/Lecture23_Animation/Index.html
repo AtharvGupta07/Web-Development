@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 1000px;
+            height: 1000px;
+            background-color: #1E1E2F;
+            border: 5px solid black;
+        }
+        .box{
+            width: 300px;
+            height: 80px;
+            background-color: #4ECCA3;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+              
+            /* animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-delay: 2s; */
+            /* animation-timing-function: linear ; */
+            /* animation-timing-function: ease-in ; */
+            /* animation-timing-function: ease-out ; */
+            /* animation-timing-function: ease-in-out  ; */
+            /* animation-timing-function: cubic-bezier(-0.28 -21.32%, 1.23 97.79%) ;
+            animation-direction: alternate;
+            animation-fill-mode: forwards; */
+
+            /*One liner: @keyframes name | duration | easing-function | delay |
+            iteration-count | direction | fill-mode  */
+            animation: rightMovement 2s linear 1s infinite alternate forwards;
+            /* animation-fill-mode: ; */
+        }
+        @keyframes  rightMovement {
+            from{
+                top: 0;
+                left: 0;
+            }
+            to{
+                top: 0;
+                left: 700px;
+            }
+        }
+
+        .box2{
+            width: 300px;
+            height: 80px;
+            background-color:#FCE38A;
+            border: 5px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: leftMovement 2s linear 1s infinite alternate-reverse forwards;
+        }
+        @keyframes leftMovement{
+            from{
+                top: 750px;
+                left: 0;
+            }
+            to{
+                top: 750px;
+                left: 700px;
+            }
+        }
+
+        .circle{
+            width: 50px;
+            height: 50px;
+            background-color: #FF6B6B;
+            border: 5px solid black;
+            border-radius: 50%;
+            position: relative;
+            animation: diagonal 4s linear 1s infinite alternate-reverse forwards;
+
+        }
+
+        @keyframes diagonal{
+            from{
+                top: 0;
+                left:0;
+            }
+            to{
+                top: 750px;
+                left: 750px;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <div class="box"></div>
+        <div class="circle"></div>
+        <div class="box2"></div>
+    </div>
+</body>
+</html>

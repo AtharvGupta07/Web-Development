@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Learning and replcating some Table</h1>
+    <table border="1" >
+        <thead>
+            <th>Student ID</th>
+            <th>Student Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1234</td>
+                <td>Bill</td>
+                <td>Male</td>
+                <td>17</td>
+            </tr>
+            <tr>
+                <td>1235</td>
+                <td>John</td>
+                <td>Male</td>
+                <td rowspan="2">18</td>
+            </tr>
+            <tr>
+                <td>1236</td>
+                <td>Olivia</td>
+                <td>Female</td>
+                
+            </tr>
+            <tr>
+                <td>1237</td>
+                <td>Mia</td>
+                <td>Female</td>
+                <td>19</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Creating table 2 using rowspan and colspan</h1>
+    <table border="1">
+        <thead>
+            <th>Column1</th>
+            <th>Column2</th>
+            <th>Colmun3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row1 Cell 1</td>
+                <td>Row1 Cell 2</td>
+                <td>Row1 Cell 3</td>
+            </tr>
+            <tr>
+                <td>Row2 Cell 2</td>
+                <td>Row2 Cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3"> Row 3 Cell 1</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Creating table 3 using rowspan and colspan</h1>
+    <table border = "1">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Name</th>
+                <th>Position</th>
+                <th>Salary</th>
+                <th>Type</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Bill</td>
+                <td>Microsoft</td>
+                <td>1000</td>
+                <td rowspan="4">Company founder</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Steve</td>
+                <td>Apple</td>
+                <td>1200</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Larry</td>
+                <td>Google</td>
+                <td>1100</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Mark</td>
+                <td>Facebook</td>
+                <td>1300</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="3">Total Expense:</td>
+                <td>4600</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    <h1>Creating complex table </h1>
+    <table border="1">
+        <thead>
+            <th>Country</th>
+            <th>state</th>
+            <th>city</th>
+            <th>street</th>
+            <th>male</th>
+            <th>female</th>
+            <th>others</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="8">1</td>
+                <td rowspan = "4">Kerala</td>
+                <td rowspan="2">Cochin</td>
+                <td>New street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>New street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td rowspan="2">Cochin</td>
+                <td>New street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td>New street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+                <td rowspan = "4">Maharastra</td>
+                <td rowspan="2">Mumbai</td>
+                <td>krishna street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr><td>krishna street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>
+            </tr>
+            <tr>
+            <td rowspan="2">Mumbai</td>
+            <td>krishna street</td>
+            <td>500</td>
+            <td>600</td>
+            <td>6</td>    
+        </tr>
+            <tr>
+                <td>krishna street</td>
+                <td>500</td>
+                <td>600</td>
+                <td>6</td>    
+            </tr>
+        </tbody>
+    </table>
+
+    <h1>Homework</h1>
+    <table border="1">
+        <thead>
+            <tr>
+                <th rowspan="3">Day</th>
+                <th colspan="4">Seminar</th>
+            </tr>
+            <tr>
+                <th colspan="2">Schedule</th>
+                <th rowspan="2" colspan="2">Topic</th>
+            </tr>
+            <tr>
+                <th>Begin</th>
+                <th>End</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Monday</td>
+                <td rowspan="2">5:00 p.m</td>
+                <td rowspan="2">8:00 a.m</td>
+                <td colspan="2">Introduction to XML</td>
+            </tr>
+            <tr>
+                <td colspan="2">Validity DTD</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3">Tuesday</td>
+                <td>8:00 a.m</td>
+                <td>11:00 a.m</td>
+                <td rowspan="2" colspan="2">Xpath</td>
+            </tr>
+            <tr>
+                <td>11:00 a.m</td>
+                <td>2:00 p.m</td>
+            </tr>
+            <tr>
+                <td>2:00 p.m</td>
+                <td>5:00 p.m</td>
+                <td rowspan="1" colspan="2">XSL Transformamtions</td>
+            </tr>
+            <tr>
+                <td>Wednesday</td>
+                <td>8:00a.m</td>
+                <td>12:00p.m</td>
+                <td colspan="2">XSL Formating Object</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

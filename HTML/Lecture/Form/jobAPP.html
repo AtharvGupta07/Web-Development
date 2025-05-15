@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+    <title>Job Application</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Job Application</h1>
+
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" id="name">
+
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email">
+
+        <br><br>
+
+        <label for="phone">phone:</label>
+        <input type="tel" id="phone">
+
+        <br><br>
+        <label for="resume">Resume:</label>
+        <input type="file" id="resume">
+
+        <br><br>
+        <label for="exp">Experience(years)</label>
+        <input type="number" id="exp" min="0" max="20">
+
+        <br><br>
+        <fieldset>
+            <legend>Skills:</legend>
+            
+            <input type="checkbox" id="box1">
+            <label for="box1">Html</label>
+
+            
+            <input type="checkbox" id="box2">
+            <label for="box2">Css</label>
+            
+            <input type="checkbox" id="box3">
+            <label for="box3">java</label>
+            
+        </fieldset>
+
+        <br><br>
+        <label for="edu">Highest Education:</label>
+        <select name="education" id="edu">
+            <option value="high">high scl</option>
+            <option value="jr">junior scl</option>
+            <option value="none">nil</option>
+        </select>
+
+        <br><br>
+        <fieldset>
+            <legend>Job-Type</legend>
+
+            <input type="radio" id="01" name="time">
+            <label for="01">Full-time</label>
+
+            <br>
+            <input type="radio" id="02" name="time">
+            <label for="02">Part-time</label>
+        </fieldset>
+
+        <label for="bigbox2">Additional comments:</label>
+        <textarea name="Comment" id="bigbox2" rows="5" cols="50"></textarea>
+
+        <button>Submit</button>
+
+    </form>
+</body>
+</html>

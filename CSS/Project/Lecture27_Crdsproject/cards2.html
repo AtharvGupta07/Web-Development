@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            height: 100vh;
+            width: 100vw;
+            background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .card{
+            height: 570px;
+            width: 400px;
+            box-shadow: 1px 1px 5px black;
+            border-radius: 15px;
+            background-image: linear-gradient(to top, #9dcde7 0%, #f2f5f7 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .design{  
+            width: 100%;
+            height: 30%;
+        }
+
+        .design img{
+            width: 100%;
+            height: 100%;
+            border-top-left-radius: 15px;
+            border-top-right-radius: 15px;
+        }
+        .content{
+            padding: 5%;
+            width: 70%;
+            height: 30%;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .content h2{
+            font-weight: 600;
+            font-size: 1.3rem;
+        }
+
+        .content p{
+            padding-top: 10%;
+            padding-bottom: 10%;
+            font-size: 1.08rem;
+            text-align: center;
+        }
+
+        .button1{
+            border: 1px solid black ;
+            width: 85%;
+            height: 10%;
+            background-color: #a1c4fdac;
+            border-radius: 10px;
+            margin: 5%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            justify-content: space-around;
+            box-shadow: 1px 1px 5px black;
+        }
+        .button1 img{
+            height: 40px;
+            width: 40px;
+            border-radius: 15%;
+        }
+
+        .payment{
+            padding-right: 40%;
+            font-size: 1.05rem;
+        }
+
+        .switch{
+            padding-right: 5%;
+        }
+
+        .button2{
+            border: 1px solid black ;
+            width: 85%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+            background-color: rgba(0, 30, 137, 0.87);
+            color: #c2e9fb;
+            box-shadow: 1px 1px 5px black;
+            font-size: 1.1rem;
+        }
+        .button3{
+            width: 85%;
+            height: 10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 900;
+        }
+    </style>
+ 
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="design">
+                <img src="design.jpeg" alt="">
+            </div>
+            <div class="content">
+                <h2>Order summary </h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                    est error maxime laboriosam,
+                    ullam dolor illum.</p>
+            </div>
+            <div class="button1">
+                <div class="logo">
+                    <img src="logo.jpeg" alt="">
+                </div>
+                <div class="payment">
+                    <p>
+                        Anual Plan  <br>
+                        $99.9/year
+                    </p>
+                </div>
+                <div class="switch">
+                    <a href="">change</a>
+                </div>
+            </div>
+            <div class="button2">
+                <p>
+                    Proceed to payment
+                </p>
+            </div>
+            <div class="button3">
+                <p>
+                    Cancel Order
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
