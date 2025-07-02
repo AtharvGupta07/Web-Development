@@ -1,0 +1,26 @@
+*{
+    margin: 1px;
+    /* border: 0; */
+    box-sizing: border-box;
+    border: 1px solid black;
+}
+
+.body_container{
+    display: flex;
+    /* align-items: center; */
+    justify-content: center;
+}
+
+/* .container{
+    
+}
+
+.header_container{
+    
+} */
+
+.header_title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
